@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Summarize the Past to Predict the Future: Natural Language Descriptions of Context Boost Multimodal Object Interaction Anticipation.">
+  <meta name="keywords" content="ldmoa">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Summarize the Past to Predict the Future: Natural Language Descriptions of Context Boost Multimodal Object Interaction Anticipation</title>
+
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-72PW1FZDE4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-72PW1FZDE4');
+  </script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Summarize the Past to Predict the Future: Natural Language Descriptions of Context Boost Multimodal Object Interaction Anticipation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a>Razvan Pasca</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a>Alexey Gavryushin</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://yenlingkuo.com/">Yen-Ling Kuo</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://ait.ethz.ch/people/hilliges/">Otmar Hilliges</a><sup>1</sup></span>
+             <span class="author-block">
+              <a href="https://ait.ethz.ch/people/xiwang/">Xi Wang</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>ETH Zurich, Switzerland</span>
+            <br>
+            <span class="author-block"><sup>2</sup>Massachusetts Institute of Technology, USA</span>
+            <br>        
+            <span class="author-block">  <b>In tbd, 2022.</b></span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://www.google.com"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+<!--               <span class="link-block">
+                <a href="https://youtu.be/YB1_xKlueUI"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <div class="diagram">
+        <img src="static/images/ldmoa_teaser.png" alt="Overview" height="750" width="1000" />
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We study the task of object interaction anticipation in egocentric videos. Successful 
+            prediction of future actions and objects requires an understanding of the spatio-temporal 
+            context formed by past actions and object relationships. We propose TransFusion, 
+            a multimodal transformer-based architecture, that effectively makes use of the 
+            representational power of language by summarizing past actions concisely. 
+            TransFusion leverages pre-trained image captioning models and summarizes the caption,
+            focusing on past actions and objects. This action context together with a single 
+            input frame is processed by a multimodal fusion module to forecast the next object 
+            interactions. Our model enables more efficient end-to-end learning by replacing 
+            dense video features with language representations, allowing us to benefit from 
+            knowledge encoded in large pre-trained models. Experiments on Ego4D and EPIC-KITCHENS-100 
+            show the effectiveness of our multimodal fusion model and the benefits of using 
+            language-based context summaries. Our method outperforms state-of-the-art approaches 
+            by 40.4% in overall mAP on the Ego4D test set. We show the generality of TransFusion 
+            via experiments on EPIC-KITCHENS-100.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section_video">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+<!--           <iframe lass="embed-responsive-item "width="960" height="520" src="https://www.youtube.com/embed/YB1_xKlueUI" frameborder="0" allowfullscreen></iframe> -->
+        </div>
+        <h2 class="subtitle has-text-centered">
+            We present a method for next-active-object interaction anticipation using language model generated summaries of past scenes and single RGB image.
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <h2 class="title is-3">Poster</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="diagram">
+            <img src="static/images/ldmoa_poster.png" alt="Overview" height="750" width="1000" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{tbd,
+      title={Summarize the Past to Predict the Future: Natural Language Descriptions of Context Boost Multimodal Object Interaction Anticipation},
+      author={Pasca, Razvan and Gavryushin, Alexey and Kuo, Yen-Ling and Hilliges, Otmar and Wang, Xi},
+      booktitle={tbd},
+      year={2022}
+    }</code></pre>
+  </div>
+</section>
+
+</body>
+</html>
