@@ -47,11 +47,15 @@
           <h1 class="title is-1 publication-title">Summarize the Past to Predict the Future: Natural Language Descriptions of Context Boost Multimodal Object Interaction Anticipation</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a>Razvan Pasca</a><sup>1</sup>,</span>
+              <a>Razvan Pasca</a><sup>1*</sup>,</span>
             <span class="author-block">
-              <a>Alexey Gavryushin</a><sup>1</sup>,</span>
+              <a>Alexey Gavryushin</a><sup>1*</sup>,</span>
+            <span class="author-block">
+              <a>Muhammad Hamza</a><sup>1</sup>,</span><br>
             <span class="author-block">
               <a href="https://yenlingkuo.com/">Yen-Ling Kuo</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://kaichun-mo.github.io/">Kaichun Mo</a><sup>3</sup>,</span>
              <span class="author-block">
               <a href="https://ee.ethz.ch/the-department/faculty/professors/person-detail.OTAyMzM=.TGlzdC80MTEsMTA1ODA0MjU5.html/">Luc Van Gool</a><sup>1</sup>,</span>
             <span class="author-block">
@@ -62,18 +66,23 @@
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>ETH Zurich, Switzerland</span>
+            <span class="author-block"><sup>1</sup> ETH Zurich, Switzerland</span>
             <br>
-            <span class="author-block"><sup>2</sup>Massachusetts Institute of Technology, USA</span>
+            <span class="author-block"><sup>2</sup> Massachusetts Institute of Technology, USA</span>
             <br>        
-            <span class="author-block">  <b>In tbd, 2023.</b></span>
+            <span class="author-block"><sup>3</sup> NVIDIA</span>
+            <br>        
+            <span class="author-block"><sup>*</sup> Equal Contribution</span>
+            <br>        
+            <span class="author-block"> 
+              <a href="https://cvpr.thecvf.com/Conferences/2024">CVPR 2024</a></span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://www.google.com"
+                <a href="https://arxiv.org/abs/2301.09209" target="_blank"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -82,15 +91,25 @@
                 </a>
               </span>
               <!-- Video Link. -->
-<!--               <span class="link-block">
-                <a href="https://youtu.be/YB1_xKlueUI"
+               <span class="link-block">
+                <a href="https://youtu.be/3fqfGQgsdXg" target="_blank"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
                   </span>
                   <span>Video</span>
                 </a>
-              </span> -->
+              </span> 
+              <!-- Code Link. -->
+               <span class="link-block">
+                <a href="https://github.com/RazvanPasca/LanguageNAO" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span> 
           </div>
         </div>
       </div>
@@ -113,14 +132,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-           We study object interaction anticipation in egocentric videos. This task requires an understanding of the spatiotemporal context formed by past actions on objects, coined
-action context. We propose TransFusion, a multimodal transformer-based architecture. It exploits the representational power of language by summarizing the action context. TransFusion leverages pre-trained image captioning
-and vision-language models to extract the action context from past video frames. This action context together with
-the next video frame is processed by the multimodal fusion module to forecast the next object interaction. Our
-model enables more efficient end-to-end learning. The large pre-trained language models add commonsense and a generalization capability. Experiments on Ego4D and EPICKITCHENS-100 show the effectiveness of our multimodal
-fusion model. They also highlight the benefits of using language-based context summaries in a task where vision
-seems to suffice. Our method outperforms state-of-the-art approaches by 40.4% in relative terms in overall mAP on
-the Ego4D test set. We validate the effectiveness of TransFusion via experiments on EPIC-KITCHENS-100.
+            We study object interaction anticipation in egocentric videos. This task requires an understanding of the spatio-temporal context formed by past actions on objects, coined "action context". We propose TransFusion, a multimodal transformer-based architecture for short-term object interaction anticipation. Our method exploits the representational power of language by summarizing the action context textually, after leveraging pre-trained image captioning and vision-language models to extract the action context from past video frames. The summarized action context and the last observed video frame are processed by the multimodal fusion module to forecast the next object interaction. Experiments on the Ego4D dataset show the effectiveness of our multimodal fusion model and highlight the benefits of using the power of vision-language models and language-based context summaries in a task where vision seems to suffice. Our novel approach outperforms all state-of-the-art methods on the Ego4D next active object interaction dataset.
           </p>
         </div>
       </div>
@@ -135,10 +147,10 @@ the Ego4D test set. We validate the effectiveness of TransFusion via experiments
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-<!--           <iframe lass="embed-responsive-item "width="960" height="520" src="https://www.youtube.com/embed/YB1_xKlueUI" frameborder="0" allowfullscreen></iframe> -->
+        <iframe lass="embed-responsive-item "width="960" height="520" src="https://www.youtube.com/embed/3fqfGQgsdXg" frameborder="0" allowfullscreen></iframe> 
         </div>
-        <h2 class="subtitle has-text-centered">
-            We present a method for next-active-object interaction anticipation using language model generated summaries of past scenes and single RGB image.
+        <h2 class="subtitle has-text-centered" style="margin-top: 15px;">
+            We present a method for next-active-object interaction anticipation using vision-language-model–generated summaries of the past together with single images.
         </h2>
       </div>
     </div>
@@ -161,12 +173,15 @@ the Ego4D test set. We validate the effectiveness of TransFusion via experiments
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@inproceedings{tbd,
-      title={Summarize the Past to Predict the Future: Natural Language Descriptions of Context Boost Multimodal Object Interaction Anticipation},
-      author={Pasca, Razvan and Gavryushin, Alexey and Kuo, Yen-Ling and Hilliges, Otmar and Wang, Xi},
-      booktitle={tbd},
-      year={2023}
-    }</code></pre>
+    <pre>
+<code>@inproceedings{
+  pasca2024transfusion,
+  title={Summarize the Past to Predict the Future: Natural Language Descriptions of Context Boost Multimodal Object Interaction Anticipation},
+  author={Pasca, Razvan and Gavryushin, Alexey and Hamza, Muhammad and Kuo, Yen-Ling and Mo, Kaichun and Van Gool, Luc and Hilliges, Otmar and Wang, Xi},
+  booktitle={Conference on Computer Vision and Pattern Recognition 2024},
+  year={2024},
+  url={https://eth-ait.github.io/transfusion-proj/}
+}</code></pre>
   </div>
 </section>
 
